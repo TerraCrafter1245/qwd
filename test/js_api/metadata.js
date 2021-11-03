@@ -5,7 +5,7 @@ const chaiHtml = require("chai-html");
 use(chaiHtml);
 
 describe("RufflePlayer.metadata", () => {
-    js_api_before("/test_assets/example.swf");
+    js_api_before("/test_assets/bloxorz.swf");
 
     it("has metadata after load", async () => {
         const player = await browser.$("<ruffle-player>");
