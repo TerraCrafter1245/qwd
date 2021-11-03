@@ -121,7 +121,7 @@ function js_api_before(swf) {
 
         if (swf) {
             await browser.execute((player) => {
-                player.load("/test_assets/example.swf");
+                player.load("/test_assets/bloxorz.swf");
             }, player);
             await play_and_monitor(browser, player);
         }
